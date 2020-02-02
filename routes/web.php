@@ -36,3 +36,7 @@ $router->get('/{id}', function($id) use ($router) {
 $router->get('/version', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/login', function () use ($router) {
+    return view('login');
+});
